@@ -8,7 +8,7 @@ void copy(char type, int p, int q)
 {
     if (type == 'R')
     {
-        for (int i = 1; i <= r; i++)
+        for (int i = 1; i <= c; i++)
             d[p][i] = d2[q][i];
     }
     else
