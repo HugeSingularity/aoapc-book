@@ -35,8 +35,8 @@ int simulate(int* r0, int* c0)
                 {
                     if (cmd[i].c[1] == 'R' && x == *r0) return 0;
                     if (cmd[i].c[1] == 'C' && x == *c0) return 0;
-                    if (cmd[i].c[1] == 'R' && x <= *r0) dr--;
-                    if (cmd[i].c[1] == 'C' && x <= *c0) dc--;
+                    if (cmd[i].c[1] == 'R' && x < *r0) dr--;
+                    if (cmd[i].c[1] == 'C' && x < *c0) dc--;
                 }
             }
             *r0 += dr; *c0 += dc;
