@@ -15,6 +15,7 @@ struct Node
     Node():have_value(false), left(NULL), right(NULL){}
 };
 
+
 Node* root;
 
 Node* newnode() { return new Node(); }
@@ -84,7 +85,7 @@ bool bfs(vector<int>& ans)
 int main()
 {
     vector<int> ans;
-    while (read_input)
+    while (read_input())
     {
         if (!bfs(ans)) failed = 1;
         if (failed) printf("not complete\n");
