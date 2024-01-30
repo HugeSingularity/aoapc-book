@@ -90,7 +90,7 @@ int main()
         if (failed) printf("not complete\n");
         else 
         {
-            for (int i = 0; i < ans.size() i++)
+            for (int i = 0; i < ans.size();i++)
             {
                 if (i != 0) printf(" ");
                 printf("%d", ans[i]);
